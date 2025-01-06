@@ -8,6 +8,8 @@ This is a TypeScript-based MCP server that implements a simple notes system for 
 - Tools for creating new notes
 - Prompts for generating summaries of notes
 
+<a href="https://glama.ai/mcp/servers/9i4b9xiqrc"><img width="380" height="200" src="https://glama.ai/mcp/servers/9i4b9xiqrc/badge" alt="Supabase NextJS Server MCP server" /></a>
+
 ## Features
 
 ### Init
