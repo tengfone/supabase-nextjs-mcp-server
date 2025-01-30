@@ -1,4 +1,5 @@
 # supabase-nextjs-server MCP Server
+[![smithery badge](https://smithery.ai/badge/@tengfone/supabase-nextjs-mcp-server)](https://smithery.ai/server/@tengfone/supabase-nextjs-mcp-server)
 
 A Model Context Protocol server
 
@@ -62,6 +63,14 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
     }
   }
 }
+```
+
+### Installing via Smithery
+
+To install Supabase Notes for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@tengfone/supabase-nextjs-mcp-server):
+
+```bash
+npx -y @smithery/cli install @tengfone/supabase-nextjs-mcp-server --client claude
 ```
 
 ### Debugging
