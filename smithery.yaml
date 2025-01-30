@@ -1,0 +1,21 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - supabaseUrl
+      - supabaseAnonKey
+    properties:
+      supabaseUrl:
+        type: string
+        description: The Supabase project URL.
+      supabaseAnonKey:
+        type: string
+        description: The anonymous key for accessing Supabase.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    config => ({command: 'node', args: ['build/index.js'], env: {NEXT_PUBLIC_SUPABASE_URL: config.supabaseUrl, NEXT_PUBLIC_SUPABASE_ANON_KEY: config.supabaseAnonKey}})
